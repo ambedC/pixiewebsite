@@ -135,6 +135,10 @@ export function WorksSection() {
 
       const sectionTop = section.offsetTop;
       const sectionScrollLength = section.offsetHeight - window.innerHeight;
+      
+      // Prevent division by zero if height is too small
+      if (sectionScrollLength <= 0) return;
+
       const scrolled = window.scrollY - sectionTop;
       const progress = Math.max(0, Math.min(1, scrolled / sectionScrollLength));
 
@@ -145,21 +149,22 @@ export function WorksSection() {
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
+    // Set initial position
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <section
       ref={sectionRef}
-      className="relative z-20 w-full bg-[#fafafa] text-[#1a1a1a] shadow-[0_-20px_50px_rgba(0,0,0,0.05)]"
-      style={{ height: '400vh' }}
+      className="relative z-20 w-full bg-[#fafafa] text-[#1a1a1a] shadow-[0_-20px_50px_rgba(0,0,0,0.05)] h-[150vh] min-[1049px]:h-[400vh]"
     >
       {/* Sticky viewport */}
-      <div className="w-full h-screen sticky top-0 flex flex-col overflow-hidden">
+      <div className="w-full h-auto min-h-[50vh] pb-12 min-[1049px]:pb-0 min-[1049px]:h-screen sticky top-0 flex flex-col overflow-hidden">
         {/* Header */}
         <div
           ref={headerRef}
-          className="text-center w-full px-6 pt-16 pb-6 sm:pt-20 sm:pb-8 shrink-0"
+          className="text-center w-full p-4 sm:pt-20 sm:pb-8 shrink-0"
         >
           <h2 className="text-3xl sm:text-4xl min-[1049px]:text-5xl font-bold tracking-tight max-w-5xl mx-auto leading-tight">
             Our mission is building impactful digital experiences.
@@ -167,10 +172,10 @@ export function WorksSection() {
         </div>
 
         {/* MOBILE/TABLET (<1049px): Scroll-driven horizontal strip */}
-        <div className="min-[1049px]:hidden flex-1 flex items-center overflow-hidden">
+        <div className="min-[1049px]:hidden w-full overflow-hidden px-4 pb-16 pt-4 flex-1">
           <div
             ref={trackRef}
-            className="flex gap-5 pl-8 pr-8 will-change-transform"
+            className="flex gap-5 w-max px-4 will-change-transform"
             style={{
               transform: `translateX(${translateX}px)`,
               transition: 'transform 0.05s linear',
