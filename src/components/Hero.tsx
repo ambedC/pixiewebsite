@@ -35,13 +35,7 @@ export function Hero() {
 
           {/* Main Title with gradient */}
           <h1
-            className="text-5xl sm:text-7xl lg:text-[96px] font-bold tracking-[-0.04em] sm:tracking-[-0.06em] leading-[1.05] sm:leading-[0.95] mb-6 pb-2"
-            style={{
-              background: "linear-gradient(135deg, #1a1a1a 0%, #3b3b3b 40%, #6d28d9 75%, #a78bfa 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-            }}
+            className="text-5xl sm:text-7xl lg:text-[96px] text-[#1a1a1a] font-bold tracking-[-0.04em] sm:tracking-[-0.06em] leading-[1.05] sm:leading-[0.95] mb-6 pb-2"
           >
             Pixie Webs
           </h1>

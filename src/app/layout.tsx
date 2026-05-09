@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { SmoothScrollProvider } from "@/components/SmoothScrollProvider";
 
 const clashDisplay = localFont({
   src: "../../public/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Variable.woff2",
@@ -73,9 +74,11 @@ export default function RootLayout({
       className={`${clashDisplay.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Navbar />
-        <main className="flex-grow flex flex-col">{children}</main>
-        <Footer />
+        <SmoothScrollProvider>
+          <Navbar />
+          <main className="flex-grow flex flex-col">{children}</main>
+          <Footer />
+        </SmoothScrollProvider>
       </body>
     </html>
   );

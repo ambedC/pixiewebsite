@@ -97,7 +97,7 @@ export function TestimonialsSection() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="relative z-30 w-full min-h-screen bg-white text-[#1a1a1a] py-20 px-6 lg:px-12 rounded-t-[3rem] shadow-[0_-20px_50px_rgba(0,0,0,0.05)] -mt-10 overflow-hidden flex flex-col justify-center">
+    <section ref={containerRef} className="relative z-30 w-full min-h-screen bg-white text-[#1a1a1a] py-8 md:py-20 px-6 lg:px-12 rounded-t-[3rem] shadow-[0_-20px_50px_rgba(0,0,0,0.05)] -mt-10 overflow-hidden flex flex-col justify-center">
       {/* Animated grid background */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none" 
         style={{
@@ -107,13 +107,13 @@ export function TestimonialsSection() {
       />
       
       <div className="max-w-[1400px] mx-auto relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#111] reveal-title">
+        <div className="text-center mb-6 md:mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-[#111] reveal-title">
             What Our Clients Say
           </h2>
         </div>
         
-        <div className="reveal-content flex-1 flex flex-col justify-center">
+        <div className="reveal-content flex-1 items-start flex flex-col justify-center">
           <AnimatedTestimonials 
             testimonials={testimonials} 
             autoplay={false} 

@@ -51,11 +51,11 @@ export const AnimatedTestimonials = ({
   const getRotation = (index: number) => rotations[index] || 0;
 
   return (
-    <div className="mx-auto max-w-sm px-4 py-10 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12">
-      <div className="relative grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-20">
+    <div className="mx-auto max-w-sm px-4 py-2 md:py-10 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12">
+      <div className="relative grid grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-x-20">
         {/* Image Section */}
         <div className="flex items-center justify-center">
-            <div className="relative h-80 w-full max-w-xs">
+            <div className="relative h-56 md:h-80 w-full max-w-[224px] md:max-w-xs">
               <AnimatePresence>
                 {testimonials.map((testimonial, index) => (
                   <motion.div
@@ -104,20 +104,20 @@ export const AnimatedTestimonials = ({
               className="flex flex-col justify-between"
             >
                 <div>
-                    <h3 className="text-2xl font-bold text-amber-950">
+                    <h3 className="text-xl md:text-2xl font-bold text-amber-950">
                         {testimonials[currentIndex].name}
                     </h3>
-                    <p className="text-sm text-amber-900/70">
+                    <p className="text-xs md:text-sm text-amber-900/70">
                         {testimonials[currentIndex].designation}
                     </p>
-                    <motion.p className="mt-8 text-lg text-amber-950/90 italic leading-relaxed">
+                    <motion.p className="mt-4 md:mt-8 text-base md:text-lg text-amber-950/90 italic leading-relaxed">
                         "{testimonials[currentIndex].quote}"
                     </motion.p>
                 </div>
             </motion.div>
           </AnimatePresence>
           {!hideControls && (
-            <div className="flex gap-4 pt-12">
+            <div className="flex gap-4 pt-6 md:pt-12">
               <button
                 onClick={handlePrev}
                 aria-label="Previous testimonial"
