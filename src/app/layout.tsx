@@ -1,6 +1,16 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+
+const clashDisplay = localFont({
+  src: "../../public/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Variable.woff2",
+  variable: "--font-clash-display",
+  weight: "200 700",
+  display: "swap",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +25,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://pixiewebs.com"),
   title: {
-    default: "Pixie Web Solutions — Websites That Work. Magic That Connects.",
+    default: "Pixie Web Solutions | Make Pixel Perfect Websites.",
     template: "%s | Pixie Web Solutions",
   },
   description:
@@ -60,9 +70,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${clashDisplay.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Navbar />
+        <main className="flex-grow flex flex-col">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
