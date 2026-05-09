@@ -166,7 +166,7 @@ export function WorksSection() {
           ref={headerRef}
           className="text-center w-full p-4 sm:pt-20 sm:pb-8 shrink-0"
         >
-          <h2 className="text-3xl sm:text-4xl min-[1049px]:text-5xl font-bold tracking-tight max-w-5xl mx-auto leading-tight">
+          <h2 className="text-3xl sm:text-5xl min-[1049px]:text-5xl font-semibold tracking-tight max-w-5xl mx-auto leading-tight">
             Our mission is building impactful digital experiences.
           </h2>
         </div>
