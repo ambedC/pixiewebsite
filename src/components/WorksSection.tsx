@@ -157,7 +157,7 @@ export function WorksSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative z-20 w-full bg-[#fafafa] text-[#1a1a1a] shadow-[0_-20px_50px_rgba(0,0,0,0.05)] h-[150vh] min-[1049px]:h-[400vh]"
+      className="relative z-20 w-full bg-[#fafafa] text-[#1a1a1a] shadow-[0_-20px_50px_rgba(0,0,0,0.05)] h-[180vh] min-[1049px]:h-[400vh]"
     >
       {/* Sticky viewport */}
       <div className="w-full h-auto min-h-[50vh] pb-12 min-[1049px]:pb-0 min-[1049px]:h-screen sticky top-0 flex flex-col overflow-hidden">
@@ -166,7 +166,7 @@ export function WorksSection() {
           ref={headerRef}
           className="text-center w-full p-4 pt-20 sm:pt-20 sm:pb-8 shrink-0"
         >
-          <h2 className="text-3xl sm:text-5xl min-[1049px]:text-5xl font-semibold mb-6 md:mb-12 tracking-tight max-w-5xl mx-auto leading-tight">
+          <h2 className="text-3xl sm:text-4xl min-[1049px]:text-5xl font-semibold mb-6 md:mb-12 tracking-tight max-w-5xl mx-auto leading-tight">
             Our mission is building impactful digital experiences.
           </h2>
         </div>
