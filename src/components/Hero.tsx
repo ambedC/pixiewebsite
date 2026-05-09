@@ -18,13 +18,13 @@ export function Hero() {
       />
       
       {/* Content */}
-      <div className="w-full max-w-[1400px] mx-auto px-8 lg:px-16 pt-20">
+      <div className="w-full max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-16 pt-32 sm:pt-20">
         <div className="max-w-xl">
           {/* Main Title */}
           <h1 
-            className="text-6xl sm:text-7xl lg:text-[85px] font-semibold tracking-[-0.1em] text-[#2c2c2c] leading-[0.9] mb-4"
+            className="text-5xl sm:text-7xl lg:text-[85px] font-semibold tracking-[-0.05em] sm:tracking-[-0.1em] text-[#2c2c2c] leading-[1.1] sm:leading-[0.9] mb-6 sm:mb-4"
             style={{
-              textShadow: "0px 4px 20px rgba(0,0,0,0.15)"
+              textShadow: "0px 4px 20px rgba(0,0,0,0.1)"
             }}
           >
             Pixie Webs

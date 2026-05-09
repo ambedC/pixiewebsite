@@ -97,19 +97,116 @@ const galleryData: GalleryItem[] = [
 ];
 
 export function WorksSection() {
+  const sectionRef = React.useRef<HTMLElement>(null);
+  const headerRef = React.useRef<HTMLDivElement>(null);
+  const trackRef = React.useRef<HTMLDivElement>(null);
+  const [galleryHeight, setGalleryHeight] = React.useState(420);
+  const [galleryRadius, setGalleryRadius] = React.useState(480);
+  const [translateX, setTranslateX] = React.useState(0);
+
+  // Desktop gallery sizing
+  React.useEffect(() => {
+    const compute = () => {
+      const vh = window.innerHeight;
+      const w = window.innerWidth;
+      const headerH = headerRef.current?.offsetHeight ?? 0;
+      const available = vh - headerH - 40;
+
+      if (w < 1049) {
+        setGalleryRadius(340);
+        setGalleryHeight(Math.max(380, Math.min(available, 440)));
+      } else {
+        setGalleryRadius(480);
+        setGalleryHeight(Math.max(420, Math.min(available, 500)));
+      }
+    };
+    const id = requestAnimationFrame(compute);
+    window.addEventListener('resize', compute);
+    return () => { cancelAnimationFrame(id); window.removeEventListener('resize', compute); };
+  }, []);
+
+  // Scroll-driven horizontal translation for mobile/tablet
+  React.useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerWidth >= 1049) return;
+      const section = sectionRef.current;
+      const track = trackRef.current;
+      if (!section || !track) return;
+
+      const sectionTop = section.offsetTop;
+      const sectionScrollLength = section.offsetHeight - window.innerHeight;
+      const scrolled = window.scrollY - sectionTop;
+      const progress = Math.max(0, Math.min(1, scrolled / sectionScrollLength));
+
+      const trackWidth = track.scrollWidth;
+      const viewportWidth = window.innerWidth;
+      const maxTranslate = -(trackWidth - viewportWidth + 32); // 32px = end padding
+      setTranslateX(progress * maxTranslate);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <section className="relative z-20 w-full bg-[#fafafa] text-[#1a1a1a] shadow-[0_-20px_50px_rgba(0,0,0,0.05)]" style={{ height: '400vh' }}>
-      <div className="w-full h-[150vh] sticky top-0 flex flex-col items-center justify-start overflow-hidden">
-        {/* Header with responsive spacing and typography */}
-        <div className="text-center mt-32 md:mt-40 mb-32 md:mb-72 z-10 w-full px-6">
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight max-w-5xl mx-auto leading-tight">
+    <section
+      ref={sectionRef}
+      className="relative z-20 w-full bg-[#fafafa] text-[#1a1a1a] shadow-[0_-20px_50px_rgba(0,0,0,0.05)]"
+      style={{ height: '400vh' }}
+    >
+      {/* Sticky viewport */}
+      <div className="w-full h-screen sticky top-0 flex flex-col overflow-hidden">
+        {/* Header */}
+        <div
+          ref={headerRef}
+          className="text-center w-full px-6 pt-16 pb-6 sm:pt-20 sm:pb-8 shrink-0"
+        >
+          <h2 className="text-3xl sm:text-4xl min-[1049px]:text-5xl font-bold tracking-tight max-w-5xl mx-auto leading-tight">
             Our mission is building impactful digital experiences.
           </h2>
         </div>
-        
-        {/* Gallery with responsive scaling */}
-        <div className="w-full flex items-center justify-center pb-32 md:pb-64">
-          <CircularGallery items={galleryData} radius={500} autoRotateSpeed={0.05} />
+
+        {/* MOBILE/TABLET (<1049px): Scroll-driven horizontal strip */}
+        <div className="min-[1049px]:hidden flex-1 flex items-center overflow-hidden">
+          <div
+            ref={trackRef}
+            className="flex gap-5 pl-8 pr-8 will-change-transform"
+            style={{
+              transform: `translateX(${translateX}px)`,
+              transition: 'transform 0.05s linear',
+            }}
+          >
+            {galleryData.map((item) => (
+              <div
+                key={item.photo.url}
+                className="shrink-0 w-[72vw] max-w-[300px] h-[56vw] max-h-[230px] rounded-2xl overflow-hidden shadow-xl relative"
+              >
+                <img
+                  src={item.photo.url}
+                  alt={item.photo.text}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 w-full p-3 text-white">
+                  <p className="text-sm font-bold leading-tight">{item.common}</p>
+                  <p className="text-[11px] opacity-70 mt-0.5">{item.binomial}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* DESKTOP (≥1049px): 3D Circular Gallery */}
+        <div
+          className="hidden min-[1049px]:flex w-full items-center justify-center shrink-0"
+          style={{ height: `${galleryHeight}px` }}
+        >
+          <CircularGallery
+            items={galleryData}
+            radius={galleryRadius}
+            height={galleryHeight}
+            autoRotateSpeed={0.05}
+          />
         </div>
       </div>
     </section>

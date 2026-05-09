@@ -24,10 +24,12 @@ interface CircularGalleryProps extends HTMLAttributes<HTMLDivElement> {
   radius?: number;
   /** Controls the speed of auto-rotation when not scrolling. */
   autoRotateSpeed?: number;
+  /** Explicit height for the gallery container in px. */
+  height?: number;
 }
 
 const CircularGallery = React.forwardRef<HTMLDivElement, CircularGalleryProps>(
-  ({ items, className, radius = 600, autoRotateSpeed = 0.02, ...props }, ref) => {
+  ({ items, className, radius = 600, autoRotateSpeed = 0.02, height = 500, ...props }, ref) => {
     const [rotation, setRotation] = useState(0);
     const [isScrolling, setIsScrolling] = useState(false);
     const [dynamicRadius, setDynamicRadius] = useState(radius);
@@ -101,13 +103,14 @@ const CircularGallery = React.forwardRef<HTMLDivElement, CircularGalleryProps>(
         ref={ref}
         role="region"
         aria-label="Circular 3D Gallery"
-        className={cn("relative w-full h-full flex items-center justify-center", className)}
-        style={{ perspective: '2000px' }}
+        className={cn("relative w-full flex items-center justify-center", className)}
+        style={{ perspective: '2000px', height: `${height}px` }}
         {...props}
       >
         <div
-          className="relative w-full h-full"
+          className="relative w-full"
           style={{
+            height: `${height}px`,
             transform: `rotateY(${rotation}deg)`,
             transformStyle: 'preserve-3d',
           }}
@@ -124,7 +127,7 @@ const CircularGallery = React.forwardRef<HTMLDivElement, CircularGalleryProps>(
                 key={item.photo.url} 
                 role="group"
                 aria-label={item.common}
-                className="absolute w-[200px] h-[280px] md:w-[300px] md:h-[400px]"
+                className="absolute w-[120px] h-[168px] sm:w-[200px] sm:h-[280px] md:w-[300px] md:h-[400px]"
                 style={{
                   transform: `rotateY(${itemAngle}deg) translateZ(${dynamicRadius}px)`,
                   left: '50%',
@@ -146,10 +149,10 @@ const CircularGallery = React.forwardRef<HTMLDivElement, CircularGalleryProps>(
                     style={{ objectPosition: item.photo.pos || 'center' }}
                   />
                   {/* Replaced text-primary-foreground with text-white for consistent color */}
-                  <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
-                    <h2 className="text-xl font-bold">{item.common}</h2>
-                    <em className="text-sm italic opacity-80">{item.binomial}</em>
-                    <p className="text-xs mt-2 opacity-70">Photo by: {item.photo.by}</p>
+                  <div className="absolute bottom-0 left-0 w-full p-2 sm:p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
+                    <h2 className="text-sm sm:text-xl font-bold">{item.common}</h2>
+                    <em className="hidden sm:block text-sm italic opacity-80">{item.binomial}</em>
+                    <p className="hidden sm:block text-xs mt-2 opacity-80">Photo by: {item.photo.by}</p>
                   </div>
                 </div>
               </div>

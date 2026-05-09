@@ -149,7 +149,7 @@ export function Footer() {
       {/* Large Brand Text Section */}
       <div className="relative mt-0 overflow-hidden select-none pointer-events-none">
         <div className="flex justify-center">
-          <h2 className="text-[22vw] font-bold text-black leading-none tracking-tighter whitespace-nowrap translate-y-[30%]">
+          <h2 className="text-[20vw] sm:text-[22vw] font-bold text-black leading-none tracking-tighter whitespace-nowrap translate-y-[25%] sm:translate-y-[30%]">
             Pixie Webs
           </h2>
         </div>

@@ -22,13 +22,13 @@ export function Navbar() {
       <nav className="fixed top-0 left-0 w-full z-50 px-4 py-4 flex items-center justify-between transition-all duration-300 pointer-events-none">
         {/* Left: Logo */}
         <div className={`flex items-center p-2 rounded-2xl transition-all duration-500 pointer-events-auto ${
-          scrolled ? "bg-white/50 backdrop-blur-lg shadow-sm border border-black/[0.03]" : "bg-transparent"
+          scrolled ? "bg-white/70 backdrop-blur-xl shadow-sm border border-black/[0.03]" : "bg-transparent"
         }`}>
           <Link href="/">
             <img 
               src="/images/logo.png" 
               alt="Pixie Webs" 
-              className="h-24 w-auto object-contain drop-shadow-sm hover:scale-105 transition-transform" 
+              className="h-10 sm:h-16 w-auto object-contain drop-shadow-sm hover:scale-105 transition-transform" 
             />
           </Link>
         </div>
@@ -72,7 +72,7 @@ export function Navbar() {
         <div className="pointer-events-auto">
           <Link 
             href="/contact" 
-            className="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full shadow-sm hover:shadow-md hover:scale-105 transition-all text-[15px] font-medium"
+            className="flex items-center gap-2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 rounded-full shadow-sm hover:shadow-md hover:scale-105 transition-all text-sm sm:text-[15px] font-medium"
           >
             Contact
             <span className="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"></span>
