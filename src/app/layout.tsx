@@ -5,6 +5,7 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SmoothScrollProvider } from "@/components/SmoothScrollProvider";
+import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 
 const clashDisplay = localFont({
   src: "../../public/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Variable.woff2",
@@ -78,6 +79,7 @@ export default function RootLayout({
           <Navbar />
           <main className="flex-grow flex flex-col">{children}</main>
           <Footer />
+          <ScrollToTopButton />
         </SmoothScrollProvider>
       </body>
     </html>

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "starter",
+    "planName": "Starter Package",
+    "planSubtitle": "Ideal for small businesses, portfolios, and startups looking for a clean online presence.",
+    "basePrice": 5000,
+    "pricePerPage": 1000,
+    "minPages": 5,
+    "maxPages": 10,
+    "initialPages": 5,
+    "themeColor": "blue",
+    "ctaText": "Get a quote",
+    "features": [
+      "5 professionally designed pages",
+      "Responsive design for all devices",
+      "Modern UI/UX layout",
+      "Basic SEO optimization",
+      "Contact form integration",
+      "Fast-loading website structure"
+    ]
+  },
+  {
+    "id": "business",
+    "planName": "Business Package",
+    "planSubtitle": "Growing businesses needing a stronger and more professional digital presence.",
+    "basePrice": 9000,
+    "pricePerPage": 1100,
+    "minPages": 8,
+    "maxPages": 15,
+    "initialPages": 8,
+    "themeColor": "red",
+    "ctaText": "Get a quote",
+    "features": [
+      "Up to 8 professionally designed pages",
+      "Advanced responsive design",
+      "Custom UI/UX design",
+      "Enhanced SEO optimization",
+      "Contact forms & WhatsApp integration",
+      "Performance optimization",
+      "Basic animations/interactions",
+      "Social media integration"
+    ]
+  },
+  {
+    "id": "premium",
+    "planName": "Premium Package",
+    "planSubtitle": "Enterprise-level solutions for businesses that demand the absolute best digital experience.",
+    "basePrice": 15000,
+    "pricePerPage": 1200,
+    "minPages": 12,
+    "maxPages": 25,
+    "initialPages": 12,
+    "themeColor": "gold",
+    "ctaText": "Get a quote",
+    "features": [
+      "Up to 12 custom-designed pages",
+      "Premium modern UI/UX experience",
+      "Fully responsive across all devices",
+      "Advanced SEO optimization",
+      "Custom sections & interactive elements",
+      "Speed and performance optimization",
+      "Multiple forms/integrations",
+      "Admin/dashboard features (if required)",
+      "Priority support after delivery"
+    ]
+  }
+]

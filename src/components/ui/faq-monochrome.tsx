@@ -4,32 +4,10 @@ import React, { useEffect, useMemo, useState } from "react";
 
 const INTRO_STYLE_ID = "faq1-animations";
 
-const faqs = [
-  {
-    question: "How do you decide which problems to solve first?",
-    answer:
-      "We map opportunities across impact, feasibility, and effort, then prototype the riskiest assumption within 72 hours to make sure we are shipping momentum, not guesswork.",
-    meta: "Discovery",
-  },
-  {
-    question: "What does collaboration look like once we start?",
-    answer:
-      "A dedicated trio of design, engineering, and strategy meets daily in a shared async dashboard. Decisions are recorded in-line, so the team, stakeholders, and audit trail stay perfectly aligned.",
-    meta: "Collaboration",
-  },
-  {
-    question: "Can you adapt to an existing design system or stack?",
-    answer:
-      "Yes. We map tokens, components, and build steps into our pipeline on day one. If a gap appears, we patch the system with regression tests so velocity never compromises fidelity.",
-    meta: "Systems",
-  },
-  {
-    question: "How is quality validated before release?",
-    answer:
-      "Accessibility sweeps, automated visual diffs, and performance budgets run on every merge. We ship only after the experience hits the expected thresholds on real devices.",
-    meta: "Quality",
-  },
-];
+import faqData from "@/data/faq.json";
+
+const faqs = faqData;
+
 
 const palettes = {
   dark: {

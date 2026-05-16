@@ -1,0 +1,50 @@
+[
+  {
+    "id": "problem-solving",
+    "question": "How do you decide which problems to solve first?",
+    "answer": "We map opportunities across impact, feasibility, and effort, then prototype the riskiest assumption within 72 hours to make sure we are shipping momentum, not guesswork.",
+    "meta": "Discovery"
+  },
+  {
+    "id": "collaboration",
+    "question": "What does collaboration look like once we start?",
+    "answer": "A dedicated trio of design, engineering, and strategy meets daily in a shared async dashboard. Decisions are recorded in-line, so the team, stakeholders, and audit trail stay perfectly aligned.",
+    "meta": "Collaboration"
+  },
+  {
+    "id": "design-systems",
+    "question": "Can you adapt to an existing design system or stack?",
+    "answer": "Yes. We map tokens, components, and build steps into our pipeline on day one. If a gap appears, we patch the system with regression tests so velocity never compromises fidelity.",
+    "meta": "Systems"
+  },
+  {
+    "id": "quality",
+    "question": "How is quality validated before release?",
+    "answer": "Accessibility sweeps, automated visual diffs, and performance budgets run on every merge. We ship only after the experience hits the expected thresholds on real devices.",
+    "meta": "Quality"
+  },
+  {
+    "id": "timeline",
+    "question": "How long does it typically take to build a website?",
+    "answer": "A Starter package typically takes 2–3 weeks, a Business package 3–5 weeks, and a Premium project 6–10 weeks depending on complexity. We provide a detailed timeline before work begins.",
+    "meta": "Timeline"
+  },
+  {
+    "id": "revisions",
+    "question": "How many revisions are included?",
+    "answer": "Every package includes structured revision rounds — two rounds for Starter, three for Business, and unlimited revisions within scope for Premium. We're committed to delivering exactly what you envision.",
+    "meta": "Revisions"
+  },
+  {
+    "id": "payments",
+    "question": "What are your payment terms?",
+    "answer": "We work on a 50% deposit to begin, with the remaining 50% due upon delivery. For larger projects, we can arrange milestone-based payment schedules.",
+    "meta": "Payments"
+  },
+  {
+    "id": "post-launch",
+    "question": "Do you offer support after the website launches?",
+    "answer": "Yes. All packages include 30 days of post-launch support. We also offer ongoing maintenance retainers for businesses that need continuous updates, performance monitoring, and priority assistance.",
+    "meta": "Support"
+  }
+]
