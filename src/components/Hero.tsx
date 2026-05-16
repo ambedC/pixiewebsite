@@ -59,7 +59,7 @@ export function Hero() {
             </Link>
 
             <Link
-              href="/#work"
+              href="/works"
               className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 font-medium text-[15px] transition-colors duration-200 group"
             >
               <span>See our work</span>

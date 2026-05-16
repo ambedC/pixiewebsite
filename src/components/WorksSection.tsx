@@ -157,7 +157,7 @@ export function WorksSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative z-20 w-full bg-[#fafafa] text-[#1a1a1a] shadow-[0_-20px_50px_rgba(0,0,0,0.05)] h-[180vh] min-[1049px]:h-[400vh]"
+      className="relative z-20 w-full bg-[#fafafa] text-[#1a1a1a] shadow-[0_-20px_50px_rgba(0,0,0,0.05)] h-[300vh] min-[1049px]:h-[400vh]"
     >
       {/* Sticky viewport */}
       <div className="w-full h-auto min-h-[50vh] pb-12 min-[1049px]:pb-0 min-[1049px]:h-screen sticky top-0 flex flex-col overflow-hidden">
@@ -184,7 +184,7 @@ export function WorksSection() {
             {galleryData.map((item) => (
               <div
                 key={item.photo.url}
-                className="shrink-0 w-[72vw] max-w-[300px] h-[56vw] max-h-[230px] rounded-2xl overflow-hidden shadow-xl relative"
+                className="shrink-0 w-[92vw] max-w-[440px] h-[75vw] max-h-[380px] rounded-3xl overflow-hidden shadow-xl relative"
               >
                 <img
                   src={item.photo.url}
@@ -192,9 +192,9 @@ export function WorksSection() {
                   className="absolute inset-0 w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 w-full p-3 text-white">
-                  <p className="text-sm font-bold leading-tight">{item.common}</p>
-                  <p className="text-[11px] opacity-70 mt-0.5">{item.binomial}</p>
+                <div className="absolute bottom-0 left-0 w-full p-5 text-white">
+                  <p className="text-base font-bold leading-tight">{item.common}</p>
+                  <p className="text-[13px] opacity-70 mt-1">{item.binomial}</p>
                 </div>
               </div>
             ))}

@@ -9,7 +9,7 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-export function AboutSection() {
+export function AboutSection({ className }: { className?: string } = {}) {
   const containerRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLHeadingElement>(null);
 
@@ -39,7 +39,7 @@ export function AboutSection() {
   return (
     <section 
       ref={containerRef} 
-      className="relative z-10 bg-white w-full min-h-screen rounded-t-[3rem] shadow-[0_-20px_50px_rgba(0,0,0,0.1)] flex items-center justify-center px-8 lg:px-24 py-32 mt-[100vh]"
+      className={`relative z-10 bg-white w-full min-h-screen rounded-t-[3rem] shadow-[0_-20px_50px_rgba(0,0,0,0.1)] flex items-center justify-center px-8 lg:px-24 py-32 ${className !== undefined ? className : 'mt-[100vh]'}`}
     >
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-1.5 bg-gray-200 rounded-full mt-6" />
       
