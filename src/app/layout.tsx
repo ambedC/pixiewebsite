@@ -81,11 +81,6 @@ export const metadata: Metadata = {
       "Premium web design and development. Affordable packages from ₹5,000 for businesses across Kerala and India.",
     images: ["https://pixiewebs.com/images/logo.png"],
   },
-  icons: {
-    icon: "/images/logo.png",
-    shortcut: "/images/logo.png",
-    apple: "/images/logo.png",
-  },
   robots: {
     index: true,
     follow: true,
