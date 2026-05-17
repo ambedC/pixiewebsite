@@ -1,0 +1,32 @@
+# Pixie Web Solutions
+
+> Pixie Web Solutions is a premium web design and development agency based in Kochi, Kerala, India. We specialise in building pixel-perfect, high-performance websites for businesses across India. Our packages start at ₹5,000, and we bring enterprise-grade quality to every project — from lean startups to growing corporations.
+
+## About
+
+- [About Pixie Web Solutions](https://pixiewebs.com/about): Learn about our story, our team, and the core values — Excellence, Transparency, Innovation, Collaboration, Empathy, and Impact — that guide every project we take on.
+
+## Services & Pricing
+
+- [Services Overview](https://pixiewebs.com/services): A detailed look at all our web design and development service packages, our capabilities, and what makes us the right choice for your business.
+- [Starter Package – ₹5,000](https://pixiewebs.com/services): Ideal for small businesses, portfolios, and startups. Includes 5 professionally designed pages, responsive design, modern UI/UX, basic SEO, contact form, and fast-loading structure.
+- [Business Package – ₹9,000](https://pixiewebs.com/services): For growing businesses. Includes up to 8 pages, custom UI/UX, enhanced SEO, WhatsApp integration, performance optimisation, animations, and social media integration.
+- [Premium Package – ₹15,000](https://pixiewebs.com/services): Enterprise-level websites. Includes up to 12 custom-designed pages, advanced SEO, interactive elements, admin/dashboard features, and priority post-launch support.
+
+## Portfolio & Work
+
+- [Our Works](https://pixiewebs.com/works): Browse our portfolio of completed projects spanning e-commerce, fintech, healthcare, real estate, AI analytics, blockchain, SaaS, social networking, edtech, and travel industries.
+
+## Contact
+
+- [Get in Touch](https://pixiewebs.com/contact): Start a project, request a quote, or ask any question. We respond quickly and are happy to discuss your goals.
+
+## Legal
+
+- [Privacy Policy](https://pixiewebs.com/privacy): How Pixie Web Solutions collects, uses, and protects your data.
+- [Terms of Service](https://pixiewebs.com/terms): The legal terms governing use of our website and services.
+- [Cookie Policy](https://pixiewebs.com/cookies): Information on how we use cookies on our website.
+
+## Optional
+
+- [Full Content (llms-full.txt)](https://pixiewebs.com/llms-full.txt): A single-file bundle of all key page content for AI agents that prefer one-fetch ingestion.

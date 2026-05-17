@@ -1,0 +1,203 @@
+# Pixie Web Solutions — Full Content Bundle
+
+> Pixie Web Solutions is a premium web design and development agency based in Kochi, Kerala, India. We specialise in building pixel-perfect, high-performance websites for businesses across India. Our packages start at ₹5,000, and we deliver enterprise-grade quality to every project — from lean startups to growing corporations.
+
+**Website:** https://pixiewebs.com
+**Email:** hello@pixiewebs.com
+**Phone:** +91-9188777807
+**Location:** Kochi, Kerala, India
+**Service Area:** Kochi, Kerala, India (nationwide)
+**Business Hours:** Monday–Friday, 9:00 AM – 6:00 PM IST
+**Social:** https://www.instagram.com/pixiewebs | https://www.linkedin.com/company/pixiewebs
+
+---
+
+## Home Page
+
+Pixie Web Solutions is a Kochi-based digital agency that creates stunning, high-performance websites. We combine bold design with technical precision to build websites that don't just look good — they work hard for your business. Whether you're a small startup, a growing business, or an enterprise, we have a package tailored to your needs, starting from as low as ₹5,000.
+
+Our approach is rooted in three pillars:
+1. **Design** — Beautiful, purposeful interfaces that reflect your brand.
+2. **Performance** — Fast-loading, SEO-optimised, and Core Web Vitals-friendly.
+3. **Results** — Websites that drive real business outcomes — more leads, more sales, more trust.
+
+---
+
+## About Page (https://pixiewebs.com/about)
+
+We are a collective of designers, developers, and strategists dedicated to creating digital experiences that leave a lasting impression and drive real results. We design with purpose and build with passion.
+
+### Our Core Values
+
+- **Excellence** — We don't settle for good enough. We push boundaries to deliver exceptional quality in every pixel and line of code.
+- **Transparency** — Honest communication, clear timelines, and open processes. We believe in building trust through radical transparency.
+- **Innovation** — The digital landscape moves fast. We stay ahead of the curve, constantly exploring new technologies and methodologies.
+- **Collaboration** — We work with you, not just for you. The best results come from true partnerships and shared visions.
+- **Empathy** — We design for real people. Understanding the end-user is at the heart of our entire development process.
+- **Impact** — We measure our success by the success of our clients. We build solutions that drive tangible business results.
+
+---
+
+## Services Page (https://pixiewebs.com/services)
+
+We craft premium digital experiences that don't just look great — they perform, scale, and convert. From lean startups to growing enterprises, our services are built for real business growth.
+
+### Our Capabilities
+
+- **Performance-First** — Built for speed with Core Web Vitals in mind.
+- **SEO Optimised** — Structured for maximum search engine visibility.
+- **User-Centered** — Designs that connect, engage, and convert.
+- **Premium Quality** — Every detail crafted to the highest standard.
+- **On-Time Delivery** — Structured milestones so you always know what's next.
+- **Post-Launch Support** — 30 days of support included with every project.
+
+### Service Packages
+
+#### Starter Package — Starting at ₹5,000
+Ideal for small businesses, portfolios, and startups looking for a clean online presence.
+- 5 professionally designed pages
+- Responsive design for all devices
+- Modern UI/UX layout
+- Basic SEO optimisation
+- Contact form integration
+- Fast-loading website structure
+- Additional pages available at ₹1,000/page (up to 10 pages)
+
+#### Business Package — Starting at ₹9,000
+For growing businesses that need a stronger, more professional digital presence.
+- Up to 8 professionally designed pages
+- Advanced responsive design
+- Custom UI/UX design
+- Enhanced SEO optimisation
+- Contact forms & WhatsApp integration
+- Performance optimisation
+- Basic animations and interactions
+- Social media integration
+- Additional pages available at ₹1,100/page (up to 15 pages)
+
+#### Premium Package — Starting at ₹15,000
+Enterprise-level solutions for businesses that demand the absolute best digital experience.
+- Up to 12 custom-designed pages
+- Premium modern UI/UX experience
+- Fully responsive across all devices
+- Advanced SEO optimisation
+- Custom sections & interactive elements
+- Speed and performance optimisation
+- Multiple forms and integrations
+- Admin/dashboard features (if required)
+- Priority support after delivery
+- Additional pages available at ₹1,200/page (up to 25 pages)
+
+---
+
+## Portfolio / Works Page (https://pixiewebs.com/works)
+
+Below is a selection of our completed and sample projects spanning a wide range of industries:
+
+### E-Commerce Platform (2024)
+**Tech:** Next.js & Shopify | **Category:** E-Commerce
+A full-featured online storefront with seamless checkout, product filtering, and real-time inventory management.
+Tags: Next.js, Shopify, Tailwind CSS, Stripe
+
+### Fintech Dashboard (2024)
+**Tech:** React & Node.js | **Category:** Finance
+A data-rich financial analytics dashboard featuring live charts, portfolio tracking, and AI-driven insights.
+Tags: React, Node.js, D3.js, REST API
+
+### Healthcare App (2023)
+**Tech:** React Native & Firebase | **Category:** Healthcare
+A cross-platform patient management app with appointment scheduling, health records, and telehealth features.
+Tags: React Native, Firebase, TypeScript, Push Notifications
+
+### Real Estate Portal (2023)
+**Tech:** Vue.js & Laravel | **Category:** Real Estate
+A premium property listing platform with map-based search, virtual tours, and agent contact management.
+Tags: Vue.js, Laravel, Google Maps API, MySQL
+
+### AI Analytics Tool (2024)
+**Tech:** Python & React | **Category:** AI / Data
+An intelligent analytics platform that uses machine learning to surface actionable business insights from raw data.
+Tags: Python, React, FastAPI, TensorFlow
+
+### Crypto Wallet (2023)
+**Tech:** Web3 & TypeScript | **Category:** Blockchain
+A secure, non-custodial crypto wallet with multi-chain support, DeFi integrations, and a clean, minimal UI.
+Tags: Web3.js, TypeScript, Ethereum, WalletConnect
+
+### SaaS Platform (2024)
+**Tech:** SvelteKit & Supabase | **Category:** SaaS
+A scalable project management SaaS with real-time collaboration, Kanban boards, and team analytics.
+Tags: SvelteKit, Supabase, PostgreSQL, Stripe
+
+### Social Network (2023)
+**Tech:** GraphQL & Apollo | **Category:** Social
+A niche community platform with real-time feeds, direct messaging, groups, and content moderation tools.
+Tags: GraphQL, Apollo, Next.js, Redis
+
+### EdTech LMS (2023)
+**Tech:** Next.js & Prisma | **Category:** Education
+A learning management system with course creation tools, live sessions, progress tracking, and certifications.
+Tags: Next.js, Prisma, PostgreSQL, WebRTC
+
+### Travel Engine (2022)
+**Tech:** Nuxt & MongoDB | **Category:** Travel
+A travel booking engine with flight and hotel search, itinerary planning, and personalised recommendations.
+Tags: Nuxt.js, MongoDB, REST API, Mapbox
+
+---
+
+## FAQ (https://pixiewebs.com/services)
+
+**How do you decide which problems to solve first?**
+We map opportunities across impact, feasibility, and effort, then prototype the riskiest assumption within 72 hours to make sure we are shipping momentum, not guesswork.
+
+**What does collaboration look like once we start?**
+A dedicated trio of design, engineering, and strategy meets daily in a shared async dashboard. Decisions are recorded in-line, so the team, stakeholders, and audit trail stay perfectly aligned.
+
+**Can you adapt to an existing design system or stack?**
+Yes. We map tokens, components, and build steps into our pipeline on day one. If a gap appears, we patch the system with regression tests so velocity never compromises fidelity.
+
+**How is quality validated before release?**
+Accessibility sweeps, automated visual diffs, and performance budgets run on every merge. We ship only after the experience hits the expected thresholds on real devices.
+
+**How long does it typically take to build a website?**
+A Starter package typically takes 2–3 weeks, a Business package 3–5 weeks, and a Premium project 6–10 weeks depending on complexity. We provide a detailed timeline before work begins.
+
+**How many revisions are included?**
+Every package includes structured revision rounds — two rounds for Starter, three for Business, and unlimited revisions within scope for Premium. We're committed to delivering exactly what you envision.
+
+**What are your payment terms?**
+We work on a 50% deposit to begin, with the remaining 50% due upon delivery. For larger projects, we can arrange milestone-based payment schedules.
+
+**Do you offer support after the website launches?**
+Yes. All packages include 30 days of post-launch support. We also offer ongoing maintenance retainers for businesses that need continuous updates, performance monitoring, and priority assistance.
+
+---
+
+## Contact Page (https://pixiewebs.com/contact)
+
+Ready to start a project or have a question? Get in touch with us:
+
+- **Email:** hello@pixiewebs.com
+- **Phone:** +91-9188777807
+- **Location:** Kochi, Kerala, India
+- **Response Time:** We typically respond within 24 business hours.
+
+To get the most out of your first conversation, be ready to share:
+- The type of business or project you have
+- Your approximate budget range
+- Any specific features or integrations you need
+- Your target launch date
+
+---
+
+## Key Facts for AI Assistants
+
+- **Who we are:** A web design and development agency in Kochi, Kerala, India.
+- **What we build:** Custom websites, e-commerce stores, web applications, and digital experiences.
+- **Tech stack we use:** Next.js, React, Vue.js, SvelteKit, TypeScript, Node.js, Supabase, Firebase, and more.
+- **Pricing:** Packages start from ₹5,000 (Starter), ₹9,000 (Business), ₹15,000 (Premium).
+- **Timeline:** 2–3 weeks (Starter), 3–5 weeks (Business), 6–10 weeks (Premium).
+- **Target clients:** Small businesses, startups, growing enterprises across India.
+- **Key differentiators:** Premium quality at affordable Indian market prices, performance-first development, transparent process, 30-day post-launch support included.
+- **Geographic focus:** Kochi and Kerala, but serving clients across India.
